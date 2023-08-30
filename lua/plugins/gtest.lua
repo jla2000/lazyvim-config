@@ -1,6 +1,7 @@
 return {
   {
     "hfn92/qf-virtual-text.nvim",
+    event = "VeryLazy",
     config = function()
       require("qf-virtual-text").setup({})
     end,
@@ -10,7 +11,6 @@ return {
     dependencies = {
       "jose-elias-alvarez/null-ls.nvim",
     },
-    lazy = true,
     ft = { "cpp" },
     config = function()
       require("null-ls").register({
