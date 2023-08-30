@@ -1,24 +1,22 @@
 return {
   "nvim-neorg/neorg",
-  run = ":Neorg sync-parsers",
   dependencies = { "nvim-lua/plenary.nvim" },
+  build = ":Neorg sync-parsers",
   ft = "norg",
-  config = function()
-    require("neorg").setup({
-      load = {
-        ["core.defaults"] = {}, -- Loads default behaviour
-        ["core.concealer"] = {}, -- Adds pretty icons to your documents
-        ["core.tangle"] = {},
-        ["core.export"] = {},
-        ["core.export.markdown"] = {},
-        ["core.dirman"] = { -- Manages Neorg workspaces
-          config = {
-            workspaces = {
-              notes = "~/notes",
-            },
+  opts = {
+    load = {
+      ["core.defaults"] = {}, -- Loads default behaviour
+      ["core.concealer"] = {}, -- Adds pretty icons to your documents
+      ["core.tangle"] = {},
+      ["core.export"] = {},
+      ["core.export.markdown"] = {},
+      ["core.dirman"] = { -- Manages Neorg workspaces
+        config = {
+          workspaces = {
+            notes = "~/notes",
           },
         },
       },
-    })
-  end,
+    },
+  },
 }

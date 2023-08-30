@@ -2,6 +2,6 @@ return {
   {
     "Civitasv/cmake-tools.nvim",
     ft = { "cpp", "cmake" },
-    event = "VeryLazy",
+    event = false,
   },
 }
