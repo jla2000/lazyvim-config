@@ -1,7 +1,8 @@
 return {
   {
     "Civitasv/cmake-tools.nvim",
-    ft = { "cpp", "cmake" },
     event = false,
+    ft = { "cpp", "cmake" },
+    cmd = { "CMakeGenerate", "CMakeRun", "CMakeDebug", "CMakeBuild" },
   },
 }
