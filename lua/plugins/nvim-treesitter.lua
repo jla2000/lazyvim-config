@@ -2,16 +2,24 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-      textObjects = {
+      textobjects = {
         select = {
           enable = true,
+
+          -- Automatically jump forward to textobj, similar to targets.vim
           lookahead = true,
+
           keymaps = {
+            -- You can use the capture groups defined in textobjects.scm
             ["af"] = "@function.outer",
             ["if"] = "@function.inner",
             ["ac"] = "@class.outer",
-            ["ic"] = "@class.inner",
-            ["ia"] = "@parameter.inner",
+            ["ia"] = "@parameter.outer",
+            -- You can also use captures from other query groups like `locals.scm`
+            -- nvim_buf_set_keymap) which plugins like which-key display
+            ["ic"] = { query = "@class.inner", desc = "Select inner part of a class region" },
+            -- You can optionally set descriptions to the mappings (used in the desc parameter of
+            ["as"] = { query = "@scope", query_group = "locals", desc = "Select language scope" },
           },
         },
         swap = {
@@ -27,9 +35,20 @@ return {
           enable = true,
           set_jumps = true,
           goto_next_start = {
-            ["]m"] = "@function.outer",
-            ["]c"] = "@class.outer",
             ["]a"] = "@parameter.inner",
+            ["]m"] = "@function.outer",
+          },
+          goto_next_end = {
+            ["]A"] = "@parameter.outer",
+            ["]M"] = "@function.outer",
+          },
+          goto_previous_start = {
+            ["[a"] = "@parameter.outer",
+            ["[m"] = "@function.outer",
+          },
+          goto_previous_end = {
+            ["[A"] = "@parameter.outer",
+            ["[M"] = "@function.outer",
           },
         },
       },
