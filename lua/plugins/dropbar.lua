@@ -1,3 +1,7 @@
 return {
-  { "Bekaboo/dropbar.nvim", event = "VeryLazy" },
+  {
+    "Bekaboo/dropbar.nvim",
+    event = "VeryLazy",
+    enabled = false,
+  },
 }
