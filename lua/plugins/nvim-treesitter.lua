@@ -17,8 +17,8 @@ return {
             ["ic"] = "@class.inner",
             ["ia"] = "@parameter.inner",
             ["aa"] = "@parameter.outer",
-            ["ik"] = "@comment.inner",
-            ["ak"] = "@comment.outer",
+            ["ix"] = "@comment.inner",
+            ["ax"] = "@comment.outer",
           },
         },
         swap = {
