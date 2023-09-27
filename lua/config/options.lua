@@ -5,6 +5,6 @@ vim.opt.clipboard = ""
 vim.opt.scrolloff = 8
 
 if vim.g.neovide then
-  vim.o.guifont = "JetbrainsMono_Nerd_Font:h11"
+  vim.o.guifont = "JetbrainsMono_Nerd_Font:h12"
   vim.g.neovide_hide_mouse_when_typing = true
 end
