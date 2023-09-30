@@ -10,7 +10,7 @@ return {
   {
     "hfn92/cmake-gtest.nvim",
     dependencies = {
-      "jose-elias-alvarez/null-ls.nvim",
+      "nvimtools/none-ls.nvim",
     },
     ft = { "cpp" },
     config = function()
