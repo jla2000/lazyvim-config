@@ -2,7 +2,7 @@
   "LazyVim": { "branch": "main", "commit": "f2193646564cd90a3ac7f4a25cd09ddbe751b2f0" },
   "LuaSnip": { "branch": "master", "commit": "2c3a3a3e4fb503bf39efb61290ecfa8aae95f5eb" },
   "SchemaStore.nvim": { "branch": "main", "commit": "08ab25507a92e22cec433f6750bb4a56a8cec22d" },
-  "catppuccin": { "branch": "main", "commit": "2bb58b51e3500a9b46b6c40df8dfe6017f82cf3c" },
+  "catppuccin": { "branch": "main", "commit": "fc537040147f0374a22b88142a20eb6781141f0b" },
   "clangd_extensions.nvim": { "branch": "main", "commit": "bafed83f79b5779f5b43e8e015e13ca99dcd8b3a" },
   "cmake-gtest.nvim": { "branch": "main", "commit": "7640cb011f9437eb9be1bb2d79ba66699ce3f102" },
   "cmake-tools.nvim": { "branch": "master", "commit": "40a06124961b2b319cca53fb2a53a1cecc2fbaa3" },
