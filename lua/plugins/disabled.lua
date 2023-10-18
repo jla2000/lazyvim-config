@@ -5,7 +5,7 @@ return {
   },
   {
     "akinsho/bufferline.nvim",
-    enabled = false,
+    enabled = true,
   },
   {
     "SmiteshP/nvim-navic",

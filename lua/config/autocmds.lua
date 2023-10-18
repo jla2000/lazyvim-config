@@ -9,3 +9,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.tabstop = 4
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "cmake",
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})
