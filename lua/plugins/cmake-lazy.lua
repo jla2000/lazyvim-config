@@ -43,7 +43,7 @@ return {
           end
 
           local filename = vim.fn.expand("%:t")
-          bauhaus_spinner = notify("Analyzing " .. filename, "info", {
+          bauhaus_spinner = notify(filename, "info", {
             title = "Bauhaus Single-File Analysis",
             icon = spinner_frames[spinner_frame_idx],
             timeout = false,
