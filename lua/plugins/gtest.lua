@@ -2,7 +2,7 @@ return {
   {
     "hfn92/qf-virtual-text.nvim",
     event = "VeryLazy",
-    enabled = true,
+    enabled = false,
     config = function()
       require("qf-virtual-text").setup({})
     end,
