@@ -43,9 +43,12 @@ return {
   --     "alfaix/neotest-gtest",
   --   },
   --   config = function()
+  --     local lib = require("neotest.lib")
   --     require("neotest").setup({
   --       adapters = {
-  --         require("neotest-gtest").setup({}),
+  --         require("neotest-gtest").setup({
+  --           root = lib.files.match_root_pattern("CMakeLists.txt"),
+  --         }),
   --       },
   --     })
   --   end,
