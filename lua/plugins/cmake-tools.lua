@@ -1,6 +1,7 @@
 return {
   {
     "Civitasv/cmake-tools.nvim",
+    dir = "~/code/cmake-tools.nvim",
     keys = {
       { "<leader>cb", "<cmd>CMakeBuild<CR>", desc = "CMake Build" },
       { "<leader>cg", "<cmd>CMakeGenerate<CR>", desc = "CMake Regenerate" },
