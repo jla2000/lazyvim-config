@@ -17,6 +17,9 @@ return {
       live_grep = {
         theme = "ivy",
       },
+      buffers = {
+        theme = "ivy",
+      },
     },
   },
 }
