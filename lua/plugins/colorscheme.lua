@@ -10,42 +10,41 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    lazy = false,
-    config = function()
-      require("catppuccin").setup({
-        show_end_of_buffer = true,
-        styles = {
-          comments = { "italic" },
-          conditionals = {},
-          loops = {},
-          functions = {},
-          keywords = {},
-          strings = {},
-          variables = {},
-          numbers = {},
-          booleans = {},
-          properties = {},
-          types = {},
-          operators = {},
-        }
-      })
-    end,
+    opts = {
+      styles = {
+        comments = { "italic" },
+        conditionals = {},
+        loops = {},
+        functions = {},
+        keywords = {},
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+      }
+    }
   },
   {
     "folke/tokyonight.nvim",
     priority = 1000,
     opts = {
-      transparent = true,
       styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
+        comments = { italic = true },
+      }
+      -- transparent = true,
+      -- styles = {
+      --   sidebars = "transparent",
+      --   floats = "transparent",
+      -- },
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight",
     },
   },
 }
