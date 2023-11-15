@@ -7,6 +7,31 @@ return {
   { "Mofiqul/dracula.nvim", priority = 1000 },
   { "oxfist/night-owl.nvim", priority = 1000 },
   {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    lazy = false,
+    config = function()
+      require("catppuccin").setup({
+        show_end_of_buffer = true,
+        styles = {
+          comments = { "italic" },
+          conditionals = {},
+          loops = {},
+          functions = {},
+          keywords = {},
+          strings = {},
+          variables = {},
+          numbers = {},
+          booleans = {},
+          properties = {},
+          types = {},
+          operators = {},
+        }
+      })
+    end,
+  },
+  {
     "folke/tokyonight.nvim",
     priority = 1000,
     opts = {
