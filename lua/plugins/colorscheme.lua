@@ -13,10 +13,10 @@ return {
     opts = {
       styles = {
         comments = { "italic" },
+        keywords = {"bold"},
         conditionals = {},
         loops = {},
         functions = {},
-        keywords = {},
         strings = {},
         variables = {},
         numbers = {},
@@ -33,6 +33,7 @@ return {
     opts = {
       styles = {
         comments = { italic = true },
+        keywords = { bold = true, italic = false },
       }
       -- transparent = true,
       -- styles = {
