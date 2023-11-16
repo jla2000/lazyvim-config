@@ -13,7 +13,7 @@ return {
     opts = {
       styles = {
         comments = { "italic" },
-        keywords = {"bold"},
+        keywords = { "bold" },
         conditionals = {},
         loops = {},
         functions = {},
@@ -24,8 +24,8 @@ return {
         properties = {},
         types = {},
         operators = {},
-      }
-    }
+      },
+    },
   },
   {
     "folke/tokyonight.nvim",
@@ -34,7 +34,7 @@ return {
       styles = {
         comments = { italic = true },
         keywords = { bold = true, italic = false },
-      }
+      },
       -- transparent = true,
       -- styles = {
       --   sidebars = "transparent",
@@ -45,7 +45,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "catppuccin",
     },
   },
 }

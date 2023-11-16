@@ -21,9 +21,9 @@ return {
       },
     },
     opts = {
-      --inlay_hints = {
-      --  enabled = true,
-      --},
+      inlay_hints = {
+        enabled = true,
+      },
       servers = {
         lua_ls = {
           settings = {
