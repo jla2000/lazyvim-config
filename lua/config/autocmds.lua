@@ -17,14 +17,16 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-vim.api.nvim_create_autocmd({ "InsertEnter" }, {
-  callback = function()
-    vim.lsp.inlay_hint.enable(0, true)
-  end,
-})
+if vim.lsp.inlay_hint then
+  vim.api.nvim_create_autocmd({ "InsertEnter" }, {
+    callback = function()
+      vim.lsp.inlay_hint.enable(0, true)
+    end,
+  })
 
-vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-  callback = function()
-    vim.lsp.inlay_hint.enable(0, false)
-  end,
-})
+  vim.api.nvim_create_autocmd({ "InsertLeave" }, {
+    callback = function()
+      vim.lsp.inlay_hint.enable(0, false)
+    end,
+  })
+end
