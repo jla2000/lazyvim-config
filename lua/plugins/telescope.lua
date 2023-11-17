@@ -20,6 +20,10 @@ return {
       buffers = {
         theme = "ivy",
       },
+      lsp_document_symbols = {
+        theme = "ivy",
+        symbol_width = 60,
+      },
     },
   },
 }

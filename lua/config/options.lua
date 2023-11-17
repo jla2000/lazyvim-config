@@ -13,7 +13,7 @@ if vim.g.neovide then
   --vim.o.guifont = "Mononoki_Nerd_Font:h13:m"
   --vim.o.guifont = "Hack_Nerd_Font_Mono:h12:m"
   --vim.o.guifont = "Fantasque_Sans_Mono:h14"
-  vim.o.guifont = "Monaspace_Neon:h12:m"
+  vim.o.guifont = "MonispaceNe_NF:h13:m"
   vim.g.neovide_hide_mouse_when_typing = true
 end
 vim.cmd("packadd cfilter")
