@@ -1,20 +1,22 @@
 return {
-  { "ellisonleao/gruvbox.nvim", priority = 1000 },
-  { "sainnhe/everforest", priority = 1000 },
-  { "rebelot/kanagawa.nvim", priority = 1000 },
-  { "mcchrish/zenbones.nvim", dependencies = "rktjmp/lush.nvim", priority = 1000 },
-  { "EdenEast/nightfox.nvim", priority = 1000 },
-  { "Mofiqul/dracula.nvim", priority = 1000 },
-  { "oxfist/night-owl.nvim", priority = 1000 },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, event = "VeryLazy" },
+  { "sainnhe/everforest", priority = 1000, event = "VeryLazy" },
+  { "rebelot/kanagawa.nvim", priority = 1000, event = "VeryLazy" },
+  { "mcchrish/zenbones.nvim", dependencies = "rktjmp/lush.nvim", priority = 1000, event = "VeryLazy" },
+  { "EdenEast/nightfox.nvim", priority = 1000, event = "VeryLazy" },
+  { "Mofiqul/dracula.nvim", priority = 1000, event = "VeryLazy" },
+  { "oxfist/night-owl.nvim", priority = 1000, event = "VeryLazy" },
   {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    opts = {
-      styles = {
+    event = "VeryLazy",
+    ---@class CatppuccinOptions
+    opts = function(_, opts)
+      opts.styles = {
         comments = { "italic" },
         keywords = { "bold" },
-        conditionals = {},
+        conditionals = { "bold" },
         loops = {},
         functions = {},
         strings = {},
@@ -24,12 +26,13 @@ return {
         properties = {},
         types = {},
         operators = {},
-      },
-    },
+      }
+    end,
   },
   {
     "folke/tokyonight.nvim",
     priority = 1000,
+    event = "VeryLazy",
     opts = {
       styles = {
         comments = { italic = true },
@@ -45,7 +48,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight-moon",
     },
   },
 }
