@@ -28,6 +28,7 @@ return {
       { "<leader>cs", "<cmd>CMakeSelectCwd<CR>", desc = "CMake PWD" },
       { "<leader>ct", "<cmd>CMakeSelectLaunchTarget<CR>", desc = "CMake Launch Target" },
       { "<leader>cc", "<cmd>CMakeSettings<CR>", desc = "CMake Settings" },
+      { "<leader>cp", "<cmd>CMakeSelectConfigurePreset<CR>", desc = "CMake Presets" },
     },
   },
 }
