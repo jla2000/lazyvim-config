@@ -4,5 +4,6 @@ vim.filetype.add({
     frag = "glsl",
     comp = "glsl",
     glsl = "glsl",
+    geom = "glsl",
   },
 })

@@ -11,4 +11,14 @@ return {
     "jay-babu/mason-nvim-dap.nvim",
     enabled = false,
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        rnix = {},
+        zls = {},
+        rust_analyzer = {},
+      },
+    },
+  },
 }
