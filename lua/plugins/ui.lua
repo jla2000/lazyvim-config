@@ -62,6 +62,10 @@ return {
           theme = "ivy",
           symbol_width = 60,
         },
+        colorscheme = {
+          theme = "ivy",
+          --previewer = false,
+        },
       },
     },
   },
