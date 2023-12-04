@@ -9,6 +9,7 @@ return {
   },
   {
     "kevinhwang91/nvim-bqf",
+    dependencies = { "junegunn/fzf" },
     ft = "qf",
   },
   {
@@ -27,22 +28,19 @@ return {
       },
     },
   },
-  -- {
-  --   "hrsh7th/nvim-cmp",
-  --   opts = {
-  --     window = {
-  --       completion = require("cmp.config.window").bordered(),
-  --       documentation = require("cmp.config.window").bordered(),
-  --     },
-  --   },
-  -- },
   {
     "nvim-telescope/telescope.nvim",
     opts = {
       defaults = {
         layout_strategy = "horizontal",
-        layout_config = { width = 0.95 },
+        layout_config = { width = 0.95, height = 0.95 },
       },
+    },
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      render = "compact",
     },
   },
 }
