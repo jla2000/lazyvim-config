@@ -4,8 +4,8 @@
 vim.opt.clipboard = ""
 vim.opt.scrolloff = 8
 vim.opt.list = true
-vim.opt.listchars:append("space:·")
-vim.opt.listchars:append("trail:-")
+--vim.opt.listchars:append("space:·")
+--vim.opt.listchars:append("trail:-")
 
 if vim.g.neovide then
   vim.o.guifont = "MonaspiceNe_NF:h12"
