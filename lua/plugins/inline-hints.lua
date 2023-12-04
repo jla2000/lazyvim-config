@@ -1,3 +1,5 @@
+local hints_enabled = true
+
 return {
   {
     "simrat39/rust-tools.nvim",
@@ -15,7 +17,8 @@ return {
       {
         "<leader>uh",
         function()
-          vim.lsp.inlay_hint.enable(0, nil)
+          vim.lsp.inlay_hint.enable(0, not hints_enabled)
+          hints_enabled = not hints_enabled
         end,
         desc = "Toggle inlay hints",
       },
