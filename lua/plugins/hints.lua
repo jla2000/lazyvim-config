@@ -1,4 +1,5 @@
-local hints_enabled = true
+local hints_toggled = true
+local hints_enabled = false
 
 return {
   {
@@ -25,26 +26,26 @@ return {
       {
         "<leader>uh",
         function()
-          vim.lsp.inlay_hint.enable(0, not hints_enabled)
-          hints_enabled = not hints_enabled
+          vim.lsp.inlay_hint.enable(0, not hints_toggled)
+          hints_toggled = not hints_toggled
         end,
         desc = "Toggle inlay hints",
       },
     },
     opts = {
       inlay_hints = {
-        enabled = true,
+        enabled = hints_enabled,
       },
       servers = {
         lua_ls = {
           settings = {
             Lua = {
-              hint = { enable = true },
+              hint = { enable = hints_enabled },
             },
           },
         },
         clangd = {
-          inlay_hints = true,
+          inlay_hints = hints_enabled,
         },
       },
     },
