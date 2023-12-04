@@ -1,3 +1,7 @@
+if true then
+  return {}
+end
+
 return {
   {
     "williamboman/mason.nvim",
@@ -15,7 +19,8 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        rnix = {},
+        lua_ls = {},
+        nil_ls = {},
         zls = {},
         rust_analyzer = {},
       },
