@@ -14,6 +14,7 @@
   "conform.nvim": { "branch": "master", "commit": "5bf1405fd234d469243ea6f394e0aeec9ea53bd8" },
   "crates.nvim": { "branch": "main", "commit": "8cb38658a8b82de75a3ae651be91a6444be35a5b" },
   "dashboard-nvim": { "branch": "master", "commit": "63df28409d940f9cac0a925df09d3dc369db9841" },
+  "diffview.nvim": { "branch": "main", "commit": "3dc498c9777fe79156f3d32dddd483b8b3dbd95f" },
   "dracula.nvim": { "branch": "main", "commit": "7200e64c589f899d29f8963aad7543856d1c2545" },
   "dressing.nvim": { "branch": "master", "commit": "8b7ae53d7f04f33be3439a441db8071c96092d19" },
   "everforest": { "branch": "master", "commit": "72f101bd63228a1a45012325e39c5280ec22c828" },
