@@ -43,4 +43,14 @@ return {
       render = "compact",
     },
   },
+  {
+    "folke/flash.nvim",
+    opts = {
+      modes = {
+        char = {
+          enabled = false,
+        },
+      },
+    },
+  },
 }
