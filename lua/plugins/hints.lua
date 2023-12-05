@@ -6,7 +6,6 @@ return {
     "Wansmer/symbol-usage.nvim",
     event = "LspAttach",
     opts = {
-      hl = { link = "LspInlayHint" },
       vt_position = "end_of_line",
     },
   },

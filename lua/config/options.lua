@@ -8,7 +8,7 @@ vim.opt.list = true
 --vim.opt.listchars:append("trail:-")
 
 if vim.g.neovide then
-  vim.o.guifont = "MonaspiceNe_NF:h12"
+  vim.o.guifont = "MonaspiceNe_NF:h13"
   vim.o.linespace = 0
   vim.g.neovide_hide_mouse_when_typing = true
 end

@@ -72,6 +72,7 @@ return {
       },
     },
     keys = {
+      { "<leader>cx", "<cmd>CMakeStop<CR>", desc = "CMake Stop" },
       { "<leader>cb", "<cmd>CMakeBuild<CR>", desc = "CMake Build" },
       { "<leader>cg", "<cmd>CMakeGenerate<CR>", desc = "CMake Regenerate" },
       { "<leader>ce", "<cmd>CMakeRun<CR>", desc = "CMake Execute" },

@@ -14,11 +14,11 @@ return {
   },
   {
     "stevearc/oil.nvim",
-    lazy = false,
-    config = function()
-      require("oil").setup({})
-      vim.keymap.set("n", "-", require("oil").open)
-    end,
+    event = "VeryLazy",
+    config = true,
+    keys = {
+      { "-", "<cmd>Oil<CR>", desc = "Open Oil" },
+    },
   },
   {
     "akinsho/bufferline.nvim",
