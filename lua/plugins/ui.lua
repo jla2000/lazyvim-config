@@ -35,6 +35,12 @@ return {
       defaults = {
         layout_strategy = "horizontal",
         layout_config = { width = 0.95, height = 0.95 },
+        mappings = {
+          i = {
+            ["<c-h>"] = "which_key",
+            ["<c-d>"] = require("telescope.actions").delete_buffer,
+          },
+        },
       },
     },
   },
