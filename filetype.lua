@@ -6,5 +6,6 @@ vim.filetype.add({
     glsl = "glsl",
     geom = "glsl",
     jet = "cpp.jet",
+    j2 = "cpp.j2",
   },
 })
