@@ -5,8 +5,8 @@ vim.keymap.set("i", "jk", "<ESC>", { noremap = true })
 vim.keymap.set("n", "gR", "<cmd> Trouble lsp_references <CR>")
 
 -- Use ]b and [b instead
---vim.keymap.set("n", "<tab>", "<cmd> bn <CR>")
---vim.keymap.set("n", "<S-tab>", "<cmd> bp <CR>")
+vim.keymap.set("n", "<tab>", "<cmd> bn <CR>")
+vim.keymap.set("n", "<S-tab>", "<cmd> bp <CR>")
 
 -- Doxyformat shortcut
 vim.keymap.set("n", "<leader>df", "<cmd> !doxyformat -i % <CR>", { desc = "Doxyformat current file" })
