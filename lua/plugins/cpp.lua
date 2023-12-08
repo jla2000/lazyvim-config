@@ -3,9 +3,11 @@ return {
     "jla2000/msr-nvim-tools",
     ft = "cpp",
     dir = "~/code/msr-nvim-tools",
+    config = true,
     dependencies = {
       "nvim-lua/plenary.nvim",
       "rcarriga/nvim-notify",
+      "L3MON4D3/LuaSnip",
     },
     keys = {
       {

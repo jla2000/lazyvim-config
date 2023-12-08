@@ -32,6 +32,11 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     opts = {
+      pickers = {
+        lsp_document_symbols = {
+          symbol_width = 60,
+        },
+      },
       defaults = {
         layout_strategy = "horizontal",
         layout_config = { width = 0.95, height = 0.95 },
