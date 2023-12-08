@@ -1,4 +1,4 @@
-if true then
+if false then
   return {}
 end
 
@@ -21,6 +21,7 @@ return {
       servers = {
         lua_ls = {},
         nil_ls = {},
+        rnix = {},
         zls = {},
         rust_analyzer = {},
       },
