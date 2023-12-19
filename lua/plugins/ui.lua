@@ -22,7 +22,7 @@ return {
   },
   {
     "akinsho/bufferline.nvim",
-    enabled = true,
+    enabled = false,
     opts = {
       options = {
         separator_style = "slope",
@@ -64,5 +64,15 @@ return {
         },
       },
     },
+  },
+  {
+    "folke/twilight.nvim",
+    event = "VeryLazy",
+  },
+  {
+    "andersevenrud/nvim_context_vt",
+    enabled = false,
+    event = "VeryLazy",
+    config = true,
   },
 }
