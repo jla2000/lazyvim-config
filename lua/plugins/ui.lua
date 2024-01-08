@@ -11,6 +11,9 @@ return {
     "kevinhwang91/nvim-bqf",
     dependencies = { "junegunn/fzf" },
     ft = "qf",
+    keys = {
+      { "<leader>n", "<cmd>Nerdy<CR>", "Pick icon" },
+    },
   },
   {
     "stevearc/oil.nvim",
