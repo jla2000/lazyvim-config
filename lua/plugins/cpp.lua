@@ -56,21 +56,25 @@ return {
     "Civitasv/cmake-tools.nvim",
     event = false,
     --dir = "~/code/cmake-tools.nvim",
-    dependencies = {
-      {
-        "stevearc/overseer.nvim",
-        config = true,
-        keys = {
-          { "<leader>o", "<cmd>OverseerToggle<CR>", desc = "Toggle Overseer" },
-        },
-      },
-    },
     opts = {
       cmake_regenerate_on_save = false,
-      --cmake_soft_link_compile_commands = false,
-      --cmake_compile_commands_from_lsp = true,
+      cmake_build_options = { "-j12" },
       cmake_executor = {
-        name = "quickfix", --"overseer",
+        name = "quickfix",
+        default_opts = {
+          quickfix = {
+            show = "only_on_error",
+          },
+        },
+      },
+      cmake_runner = {
+        name = "terminal",
+        default_opts = {
+          quickfix = {
+            --show = "only_on_error",
+            position = "top",
+          },
+        },
       },
     },
     keys = {
