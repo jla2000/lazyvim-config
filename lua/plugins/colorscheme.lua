@@ -7,7 +7,15 @@ return {
   { "oxfist/night-owl.nvim", priority = 1000, event = "VeryLazy" },
   { "Wansmer/serenity.nvim", priority = 1000, event = "VeryLazy" },
   { "folke/tokyonight.nvim", priority = 1000, event = "VeryLazy" },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, event = "VeryLazy" },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    event = "VeryLazy",
+    opts = {
+      no_underline = true,
+    },
+  },
   { "mcchrish/zenbones.nvim", dependencies = "rktjmp/lush.nvim", priority = 1000, event = "VeryLazy" },
   {
     "LazyVim/LazyVim",

@@ -63,7 +63,7 @@ return {
         name = "quickfix",
         default_opts = {
           quickfix = {
-            show = "only_on_error",
+            --show = "only_on_error",
           },
         },
       },
@@ -72,7 +72,6 @@ return {
         default_opts = {
           quickfix = {
             --show = "only_on_error",
-            position = "top",
           },
         },
       },
