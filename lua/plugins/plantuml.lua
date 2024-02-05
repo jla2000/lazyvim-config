@@ -8,7 +8,7 @@ return {
         darkmode = true,
         format = "png",
         execute_to_open = function(img)
-          return "wslview " .. img
+          return "wslview '" .. img .. "'"
         end,
       },
     })

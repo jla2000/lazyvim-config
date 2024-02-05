@@ -63,15 +63,15 @@ return {
         name = "quickfix",
         default_opts = {
           quickfix = {
-            --show = "only_on_error",
+            show = "always",
           },
         },
       },
       cmake_runner = {
         name = "terminal",
         default_opts = {
-          quickfix = {
-            --show = "only_on_error",
+          terminal = {
+            focus = true,
           },
         },
       },
@@ -87,5 +87,20 @@ return {
       { "<leader>cc", "<cmd>CMakeSettings<CR>", desc = "CMake Settings" },
       { "<leader>cp", "<cmd>CMakeSelectConfigurePreset<CR>", desc = "CMake Presets" },
     },
+  },
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "alfaix/neotest-gtest",
+      -- your other adapters here
+    },
+    config = function()
+      require("neotest").setup({
+        adapters = {
+          require("neotest-gtest").setup({}),
+        },
+      })
+    end,
   },
 }
