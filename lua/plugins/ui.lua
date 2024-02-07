@@ -27,6 +27,13 @@ return {
     keys = {
       { "-", "<cmd>Oil<CR>", desc = "Open Oil" },
     },
+    opts = {
+      default_file_explorer = true,
+      columns = {
+        "icon",
+        "size",
+      },
+    },
   },
   {
     "akinsho/bufferline.nvim",
