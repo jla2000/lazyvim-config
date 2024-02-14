@@ -48,9 +48,26 @@ return {
     "nvim-telescope/telescope.nvim",
     opts = {
       pickers = {
+        lsp_dynamic_workspace_symbols = {
+          symbol_width = 60,
+          --theme = "ivy",
+        },
         lsp_document_symbols = {
           symbol_width = 60,
+          -- theme = "ivy",
         },
+        -- find_files = {
+        --   theme = "ivy",
+        --   previewer = false,
+        -- },
+        -- oldfiles = {
+        --   theme = "ivy",
+        --   previewer = false,
+        -- },
+        -- live_grep = {
+        --   theme = "ivy",
+        --   previewer = false,
+        -- },
       },
       defaults = {
         layout_strategy = "horizontal",
