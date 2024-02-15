@@ -1,4 +1,4 @@
-if true then
+if false then
   return {}
 end
 
@@ -24,6 +24,7 @@ return {
         rnix = {},
         zls = {},
         rust_analyzer = {},
+        marksman = {},
       },
     },
   },
