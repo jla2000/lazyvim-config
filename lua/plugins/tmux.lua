@@ -2,6 +2,7 @@ return {
   {
     "vimpostor/vim-tpipeline",
     event = "VeryLazy",
+    dependencies = "nim-lualine/lualine.nvim",
   },
   {
     "christoomey/vim-tmux-navigator",
