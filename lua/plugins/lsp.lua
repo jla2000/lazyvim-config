@@ -1,12 +1,29 @@
--- Not yet ready
-if true then
-  return {}
-end
-
 return {
+  {
+    "williamboman/mason.nvim",
+    enabled = false,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    enabled = false,
+  },
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    enabled = false,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        nil_ls = {},
+        rnix = {},
+      },
+    },
+  },
   {
     "artemave/workspace-diagnostics.nvim",
     event = "LspAttach",
+    enabled = false,
     config = function()
       local diagnostics = require("workspace-diagnostics")
       diagnostics.setup({
@@ -20,15 +37,15 @@ return {
       end)
     end,
   },
-  {
-    "neovim/nvim-lspconfig",
-    opts = function(_, opts)
-      opts.servers.clangd.cmd = nil
-      opts.servers.clangd.cmd = {
-        "clangd",
-        "--background-index",
-        "--clang-tidy=false",
-      }
-    end,
-  },
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   opts = function(_, opts)
+  --     opts.servers.clangd.cmd = nil
+  --     opts.servers.clangd.cmd = {
+  --       "clangd",
+  --       "--background-index",
+  --       "--clang-tidy=false",
+  --     }
+  --   end,
+  -- },
 }
