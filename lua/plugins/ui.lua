@@ -105,12 +105,6 @@ return {
     event = "VeryLazy",
   },
   {
-    "andersevenrud/nvim_context_vt",
-    enabled = false,
-    event = "VeryLazy",
-    config = true,
-  },
-  {
     "nvimdev/dashboard-nvim",
     opts = {
       config = {

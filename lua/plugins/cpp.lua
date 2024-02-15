@@ -59,6 +59,7 @@ return {
     opts = {
       cmake_regenerate_on_save = false,
       cmake_build_options = { "-j12" },
+      cmake_soft_link_compile_commands = true,
       cmake_executor = {
         name = "quickfix",
         default_opts = {
@@ -90,17 +91,11 @@ return {
   },
   {
     "nvim-neotest/neotest",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "alfaix/neotest-gtest",
-      -- your other adapters here
+    dependencies = { "alfaix/neotest-gtest" },
+    opts = {
+      adapters = {
+        "neotest-gtest",
+      },
     },
-    config = function()
-      require("neotest").setup({
-        adapters = {
-          require("neotest-gtest").setup({}),
-        },
-      })
-    end,
   },
 }
