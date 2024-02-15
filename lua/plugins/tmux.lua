@@ -2,9 +2,6 @@ return {
   {
     "vimpostor/vim-tpipeline",
     event = "VeryLazy",
-    config = function()
-      vim.g.tpipeline_autoembed = 0
-    end,
   },
   {
     "christoomey/vim-tmux-navigator",
