@@ -54,7 +54,7 @@ return {
   },
   {
     "Civitasv/cmake-tools.nvim",
-    event = false,
+    event = "VeryLazy",
     --dir = "~/code/cmake-tools.nvim",
     opts = {
       cmake_regenerate_on_save = false,
