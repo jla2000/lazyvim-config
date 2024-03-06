@@ -5,5 +5,6 @@
 vim.opt.clipboard = ""
 vim.opt.scrolloff = 8
 vim.opt.relativenumber = false
+vim.opt.fillchars = { eob = "~" }
 
 vim.cmd("packadd cfilter")
