@@ -15,7 +15,7 @@ return {
     event = "VeryLazy",
     opts = {
       no_underline = true,
-      show_buffer_end = true,
+      show_end_of_buffer = true,
     },
   },
   {
