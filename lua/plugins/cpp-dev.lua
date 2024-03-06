@@ -67,6 +67,12 @@ return {
       cmake_regenerate_on_save = false,
       cmake_build_options = { "-j12" },
       cmake_soft_link_compile_commands = true,
+      cmake_executor = {
+        name = "quickfix",
+        opts = {
+          show = "only_on_error",
+        },
+      },
       cmake_runner = {
         name = "overseer",
         opts = {
@@ -101,7 +107,7 @@ return {
       formatters = {
         doxyformat = {
           command = "doxyformat",
-          args = { "-i", "filename" },
+          args = { "-i", "$FILENAME" },
           stdin = false,
           condition = function(_, ctx)
             return string.match(ctx.dirname, "amsr%-vector%-fs%-ipcbinding") ~= nil
