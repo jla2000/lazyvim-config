@@ -39,6 +39,9 @@ return {
             ["<c-h>"] = "which_key",
             ["<c-d>"] = require("telescope.actions").delete_buffer,
           },
+          n = {
+            ["<c-d>"] = require("telescope.actions").delete_buffer,
+          },
         },
       },
     },
