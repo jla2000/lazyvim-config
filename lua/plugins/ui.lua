@@ -6,16 +6,6 @@ return {
       "nvim-telescope/telescope.nvim",
     },
     cmd = "Nerdy",
-  },
-  {
-    "kevinhwang91/nvim-bqf",
-    dependencies = { "junegunn/fzf" },
-    ft = "qf",
-    opts = {
-      preview = {
-        auto_preview = false,
-      },
-    },
     keys = {
       { "<leader>n", "<cmd>Nerdy<CR>", "Pick icon" },
     },
@@ -38,11 +28,6 @@ return {
   {
     "akinsho/bufferline.nvim",
     enabled = false,
-    opts = {
-      options = {
-        separator_style = "slope",
-      },
-    },
   },
   {
     "nvim-telescope/telescope.nvim",
@@ -101,10 +86,6 @@ return {
     },
   },
   {
-    "folke/twilight.nvim",
-    event = "VeryLazy",
-  },
-  {
     "nvimdev/dashboard-nvim",
     opts = {
       config = {
@@ -125,15 +106,6 @@ return {
           [[                                                                       ]],
           [[                                                                       ]],
         },
-      },
-    },
-  },
-  {
-    "hrsh7th/nvim-cmp",
-    opts = {
-      window = {
-        completion = require("cmp.config.window").bordered(),
-        documentation = require("cmp.config.window").bordered(),
       },
     },
   },

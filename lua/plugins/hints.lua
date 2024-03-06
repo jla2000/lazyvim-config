@@ -3,10 +3,6 @@ local hints_enabled = false
 
 return {
   {
-    "ap/vim-css-color",
-    event = "VeryLazy",
-  },
-  {
     "Wansmer/symbol-usage.nvim",
     event = "LspAttach",
     opts = {

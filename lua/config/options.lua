@@ -4,12 +4,6 @@
 
 vim.opt.clipboard = ""
 vim.opt.scrolloff = 8
-vim.opt.list = true
 vim.opt.relativenumber = false
 
 vim.cmd("packadd cfilter")
-
--- Neovide specific settings
-if vim.g.neovide then
-  vim.g.neovide_hide_mouse_when_typing = true
-end
