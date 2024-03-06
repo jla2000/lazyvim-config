@@ -1,5 +1,5 @@
 local hints_toggled = true
-local hints_enabled = false
+local hints_enabled = true
 
 return {
   {

@@ -1,11 +1,5 @@
 return {
   {
-    "vimpostor/vim-tpipeline",
-    enabled = false,
-    event = "VeryLazy",
-    dependencies = "nvim-lualine/lualine.nvim",
-  },
-  {
     "christoomey/vim-tmux-navigator",
     cmd = {
       "TmuxNavigateLeft",
