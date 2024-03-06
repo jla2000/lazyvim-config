@@ -26,6 +26,13 @@ return {
       },
     },
   },
+  -- {
+  --   "folke/noice.nvim",
+  --   opts = {
+  --     routes = {},
+  --     messages = { view = "mini" },
+  --   },
+  -- },
   {
     "nvim-telescope/telescope.nvim",
     opts = {
