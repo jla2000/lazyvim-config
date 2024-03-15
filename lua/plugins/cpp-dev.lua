@@ -62,7 +62,7 @@ return {
   },
   {
     "Civitasv/cmake-tools.nvim",
-    event = "VeryLazy",
+    event = false,
     opts = {
       cmake_regenerate_on_save = false,
       cmake_build_options = { "-j12" },
@@ -103,21 +103,26 @@ return {
     opts = {
       formatters_by_ft = {
         cpp = { "clang_format", "doxyformat" },
+        cmake = { "cmake_format" },
       },
       formatters = {
         doxyformat = {
           command = "doxyformat",
           args = { "-i", "$FILENAME" },
           stdin = false,
-          condition = function(_, ctx)
+          condition = function(self, ctx)
             return string.match(ctx.dirname, "amsr%-vector%-fs%-ipcbinding") ~= nil
           end,
+        },
+        cmake_format = {
+          prepend_args = { "--autosort=true" },
         },
       },
     },
   },
   {
     "jla2000/msr-nvim-tools",
+    enabled = false,
     ft = "cpp",
     dir = "~/code/msr-nvim-tools",
     config = true,

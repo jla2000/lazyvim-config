@@ -1,13 +1,8 @@
 return {
-  { "ellisonleao/gruvbox.nvim", priority = 1000, event = "VeryLazy" },
-  { "sainnhe/everforest", priority = 1000, event = "VeryLazy" },
   { "rebelot/kanagawa.nvim", priority = 1000, event = "VeryLazy" },
-  { "EdenEast/nightfox.nvim", priority = 1000, event = "VeryLazy" },
   { "Mofiqul/dracula.nvim", priority = 1000, event = "VeryLazy" },
-  { "oxfist/night-owl.nvim", priority = 1000, event = "VeryLazy" },
-  { "Wansmer/serenity.nvim", priority = 1000, event = "VeryLazy" },
   { "folke/tokyonight.nvim", priority = 1000, event = "VeryLazy" },
-  { "mcchrish/zenbones.nvim", dependencies = "rktjmp/lush.nvim", priority = 1000, event = "VeryLazy" },
+  { "Mofiqul/vscode.nvim", priority = 1000, event = "VeryLazy" },
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -21,15 +16,21 @@ return {
   {
     "LazyVim/LazyVim",
     dependencies = "vague2k/huez.nvim",
-    opts = function(_, opts)
-      opts.colorscheme = require("huez.api").get_colorscheme()
-    end,
+    opts = {
+      news = { lazyvim = false },
+      colorscheme = function()
+        local colorscheme = require("huez.api").get_colorscheme()
+        vim.cmd("colorscheme " .. colorscheme)
+      end,
+    },
   },
   {
     "vague2k/huez.nvim",
     opts = {
+      -- Does not work somehow :(
+      -- file_path = vim.fs.normalize("~/.nvim.huez.lua"),
       picker = "telescope",
-      fallback = "tokyonight",
+      fallback = "retrobox",
       omit = {
         "desert",
         "evening",

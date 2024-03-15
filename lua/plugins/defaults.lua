@@ -13,6 +13,15 @@ return {
       render = "compact",
     },
   },
+  -- Enable for live command output.
+  -- {
+  --   "folke/noice.nvim",
+  --   opts = {
+  --     messages = {
+  --       enabled = false
+  --     }
+  --   }
+  -- },
   {
     "folke/flash.nvim",
     opts = {
@@ -45,5 +54,12 @@ return {
         },
       },
     },
+  },
+  {
+    "nvimtools/none-ls.nvim",
+    opts = function(_, opts)
+      local null_ls = require("null-ls")
+      opts.sources = nil
+    end,
   },
 }
