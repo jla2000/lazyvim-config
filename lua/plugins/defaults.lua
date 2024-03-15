@@ -1,4 +1,9 @@
 return {
+  { "nvim-telescope/telescope-fzf-native.nvim", enabled = true },
+  -- disable mason.nvim, use config.extraPackages
+  { "williamboman/mason-lspconfig.nvim", enabled = false },
+  { "williamboman/mason.nvim", enabled = false },
+  { "jaybaby/mason-nvim-dap.nvim", enabled = false },
   {
     "akinsho/bufferline.nvim",
     enabled = false,
