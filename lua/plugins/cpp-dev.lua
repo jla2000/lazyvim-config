@@ -16,7 +16,7 @@ return {
             local task = overseer.new_task({
               cmd = cmd,
               cwd = cwd,
-              args = { '"' .. args[1] .. '"' },
+              args = args,
               name = string.match(args[1], "[%w_.]+$"),
               env = env,
             })
