@@ -3,6 +3,9 @@ return {
   { "Mofiqul/dracula.nvim", priority = 1000, event = "VeryLazy" },
   { "folke/tokyonight.nvim", priority = 1000, event = "VeryLazy" },
   { "Mofiqul/vscode.nvim", priority = 1000, event = "VeryLazy" },
+  { "bluz71/vim-moonfly-colors", priority = 1000, event = "VeryLazy" },
+  { "tiagovla/tokyodark.nvim", priority = 1000, event = "VeryLazy" },
+  { "navarasu/onedark.nvim", priority = 1000, event = "VeryLazy" },
   {
     "catppuccin/nvim",
     name = "catppuccin",
