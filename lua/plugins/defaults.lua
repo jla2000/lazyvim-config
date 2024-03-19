@@ -3,7 +3,7 @@ return {
   -- disable mason.nvim, use config.extraPackages
   { "williamboman/mason-lspconfig.nvim", enabled = false },
   { "williamboman/mason.nvim", enabled = false },
-  { "jaybaby/mason-nvim-dap.nvim", enabled = false },
+  { "jay-babu/mason-nvim-dap.nvim", enabled = false },
   {
     "akinsho/bufferline.nvim",
     enabled = false,
@@ -41,6 +41,10 @@ return {
     },
   },
   {
+    "rcarriga/nvim-dap-ui",
+    dependencies = { "nvim-neotest/nvim-nio" },
+  },
+  {
     "nvim-telescope/telescope.nvim",
     opts = {
       pickers = {
@@ -63,7 +67,6 @@ return {
   {
     "nvimtools/none-ls.nvim",
     opts = function(_, opts)
-      local null_ls = require("null-ls")
       opts.sources = nil
     end,
   },
