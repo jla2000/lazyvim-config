@@ -13,15 +13,29 @@ return {
   {
     "stevearc/oil.nvim",
     event = "VeryLazy",
-    config = true,
     keys = {
-      { "-", "<cmd>Oil<CR>", desc = "Open Oil" },
+      {
+        "-",
+        function()
+          require("oil").open_float()
+        end,
+        desc = "Open Oil",
+      },
     },
     opts = {
       default_file_explorer = true,
       columns = {
         "icon",
         "size",
+      },
+      float = {
+        padding = 0,
+        border = "solid",
+        max_height = 15,
+        override = function(conf)
+          conf.row = vim.o.lines
+          return conf
+        end,
       },
     },
   },
