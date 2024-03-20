@@ -36,10 +36,6 @@ return {
     },
   },
   {
-    "rcarriga/nvim-dap-ui",
-    dependencies = { "nvim-neotest/nvim-nio" },
-  },
-  {
     "nvim-telescope/telescope.nvim",
     opts = {
       pickers = {
