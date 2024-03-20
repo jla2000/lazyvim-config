@@ -54,6 +54,7 @@
   "nvim-nyctophilia": { "branch": "master", "commit": "429aaf6e9f54858f02e43bd3065a811a7ff5cc8c" },
   "nvim-soil": { "branch": "master", "commit": "04a579caff7dae423446862a22ff22210968a59d" },
   "nvim-spectre": { "branch": "master", "commit": "1d23be1165c373a6026e42f3b3a5100126eaf81d" },
+  "nvim-treesitter": { "branch": "master", "commit": "19b726f9ceb5c91199baf4255e67b1b7ce74204e" },
   "nvim-treesitter-context": { "branch": "master", "commit": "2484f58384be24da375558c88402f2998193eff6" },
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "d2a4ffc22d9d38d44edb73da007b3cf43451e9b4" },
   "nvim-ts-autotag": { "branch": "main", "commit": "531f48334c422222aebc888fd36e7d109cb354cd" },

@@ -1,7 +1,7 @@
 return {
   {
     "hougesen/blame-me.nvim",
-    event = "VeryLazy",
+    ft = { "cpp", "cmake" },
     opts = {
       signs = false,
       delay = 500,
