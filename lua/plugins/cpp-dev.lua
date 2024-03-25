@@ -139,4 +139,15 @@ return {
       },
     },
   },
+  {
+    "jla2000/lazydocs.nvim",
+    enabled = false,
+    event = "VeryLazy",
+    dir = "~/code/lazydocs.nvim",
+    dependencies = {
+      "L3MON4D3/LuaSnip",
+      "nvimtools/none-ls.nvim",
+    },
+    opts = {},
+  },
 }
