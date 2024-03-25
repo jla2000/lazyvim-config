@@ -121,6 +121,12 @@ return {
     },
   },
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = { "doxygen" },
+    },
+  },
+  {
     "jla2000/msr-nvim-tools",
     enabled = false,
     ft = "cpp",

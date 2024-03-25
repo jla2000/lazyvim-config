@@ -21,4 +21,10 @@ return {
     "figsoda/nix-develop.nvim",
     event = "VeryLazy",
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = { "nix" },
+    },
+  },
 }
