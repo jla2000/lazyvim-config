@@ -107,7 +107,9 @@ return {
       },
       formatters = {
         doxyformat = {
-          command = "doxyformat",
+          command = function()
+            return "BSW/amsr-vector-fs-ipcbinding/infrastructure/doxyformat/doxyformat"
+          end,
           args = { "-i", "$FILENAME" },
           stdin = false,
           condition = function(self, ctx)
