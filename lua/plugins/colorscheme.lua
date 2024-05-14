@@ -6,6 +6,7 @@ return {
   { "bluz71/vim-moonfly-colors", priority = 1000, event = "VeryLazy" },
   { "tiagovla/tokyodark.nvim", priority = 1000, event = "VeryLazy" },
   { "navarasu/onedark.nvim", priority = 1000, event = "VeryLazy" },
+  { "eldritch-theme/eldritch.nvim", priority = 1000, event = "VeryLazy" },
   {
     "catppuccin/nvim",
     name = "catppuccin",
