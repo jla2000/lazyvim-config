@@ -1,39 +1,28 @@
 return {
-  { "rebelot/kanagawa.nvim", priority = 1000, event = "VeryLazy" },
-  { "Mofiqul/dracula.nvim", priority = 1000, event = "VeryLazy" },
-  { "folke/tokyonight.nvim", priority = 1000, event = "VeryLazy" },
-  { "Mofiqul/vscode.nvim", priority = 1000, event = "VeryLazy" },
-  { "bluz71/vim-moonfly-colors", priority = 1000, event = "VeryLazy" },
-  { "tiagovla/tokyodark.nvim", priority = 1000, event = "VeryLazy" },
-  { "navarasu/onedark.nvim", priority = 1000, event = "VeryLazy" },
-  { "eldritch-theme/eldritch.nvim", priority = 1000, event = "VeryLazy" },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
-    event = "VeryLazy",
-    opts = {
-      no_underline = true,
-      show_end_of_buffer = true,
-    },
-  },
-  {
-    "LazyVim/LazyVim",
-    dependencies = "vague2k/huez.nvim",
-    opts = {
-      news = { lazyvim = false },
-      colorscheme = function()
-        local colorscheme = require("huez.api").get_colorscheme()
-        vim.cmd("colorscheme " .. colorscheme)
-      end,
-    },
-  },
   {
     "vague2k/huez.nvim",
+    branch = "stable",
+    event = "UIEnter",
+    dependencies = {
+      {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        opts = {
+          no_underline = true,
+          show_end_of_buffer = true,
+        },
+      },
+      "rebelot/kanagawa.nvim",
+      "Mofiqul/dracula.nvim",
+      "folke/tokyonight.nvim",
+      "Mofiqul/vscode.nvim",
+      "bluz71/vim-moonfly-colors",
+      "tiagovla/tokyodark.nvim",
+      "navarasu/onedark.nvim",
+      "eldritch-theme/eldritch.nvim",
+    },
     opts = {
-      -- Does not work somehow :(
-      -- file_path = vim.fs.normalize("~/.nvim.huez.lua"),
-      picker = "telescope",
+      file_path = vim.fs.normalize("~/.nvim.huez.lua"),
       fallback = "retrobox",
       omit = {
         "desert",
